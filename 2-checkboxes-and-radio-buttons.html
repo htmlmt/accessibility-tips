@@ -1,0 +1,29 @@
+<!--
+	2. Group radio buttons and checkboxes within a <fieldset> element with a <legend> element
+-->
+
+<!-- Don't -->
+<label>Set a time limit on monthly donations?</label>
+<label for="recurring-has-time-limit-no">No</label>
+<input id="recurring-has-time-limit-no" name="recurringHasTimeLimit" type="radio" />
+<label for="recurring-has-time-limit-yes">Yes</label>
+<input id="recurring-has-time-limit-yes" name="recurringHasTimeLimit" type="radio" />
+
+<label>Corporate Giving</label>
+<label for="is-matching-eligible">This gift is matching eligible</label>
+<input id="is-matching-eligible" name="isMatchingEligible" type="checkbox" value="1" />
+
+<!-- Do -->
+<fieldset>
+	<legend>Set a time limit on monthly donations?</legend>
+	<label for="recurring-has-time-limit-no">No</label>
+	<input id="recurring-has-time-limit-no" name="recurringHasTimeLimit" type="radio" />
+	<label for="recurring-has-time-limit-yes">Yes</label>
+	<input id="recurring-has-time-limit-yes" name="recurringHasTimeLimit" type="radio" />
+</fieldset>
+
+<fieldset>
+	<legend>Corporate Giving</legend>
+	<label for="is-matching-eligible">This gift is matching eligible</label>
+	<input id="is-matching-eligible" name="isMatchingEligible" type="checkbox" />
+</fieldset>

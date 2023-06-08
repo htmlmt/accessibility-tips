@@ -1,0 +1,61 @@
+<!--
+	6. Structure text with sequentially ordered <h1>/<h2>/etc. tags
+	Use <p> tags for paragraph text and <ul>/<ol>/<li> tags for lists.
+	Group content within <main>, <article>, <section>, and <aside> tags.
+-->
+
+<!-- Don't -->
+<h2>Page title</h2>
+<small>2-23-23</small>
+
+<h5>Table of contents</h5>
+<div class="list">
+	<a href="#first-subheading">First subheading</a><br />
+	<a href="#second-subheading">Second subheading</a>
+</div>
+
+<h3 id="first-subheading">First subheading</h3>
+<span class="paragraph-text">First bit of content</span>
+
+<div class="sidebar">
+	Something indirectly related
+</div>
+
+<h3 id="second-subheading">Second subheading</h3>
+<span class="paragraph-text">Second bit of content</span>
+
+<!-- Do -->
+<main>
+	<article>
+		<header>
+			<h1>Page title</h1>
+			<time>2-23-23</time>
+		</header>
+
+		<nav>
+			<h2>Table of contents</h2>
+			<ul>
+				<li>
+					<a href="#first-subheading">First subheading</a>
+				</li>
+				<li>
+					<a href="#second-subheading">Second subheading</a>
+				</li>
+			</ul>
+		</nav>
+
+		<section>
+			<h3 id="first-subheading">First subheading</h3>
+			<p>First bit of content</p>
+		</section>
+
+		<aside>
+			<p>Something indirectly related</p>
+		</aside>
+
+		<section>
+			<h3 id="second-subheading">Second subheading</h3>
+			<p>Second bit of content</p>
+		</section>
+	</article>
+</main>

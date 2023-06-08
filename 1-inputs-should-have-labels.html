@@ -1,0 +1,45 @@
+<!--
+	1. Use the for attribute on the <label> element to reference the id of the <input> element
+-->
+
+<!-- Don't -->
+<label>Donation Amount</label>
+<input name="donationAmount" type="number">
+
+<!-- Do -->
+<!-- <input> -->
+<label for="donation-amount-input">Donation Amount</label>
+<input id="donation-amount-input" name="donationAmount" type="number">
+
+<!-- <textarea> -->
+<label for="donation-message-textarea">Write an encouraging message for Bob Mixell</label>
+<textarea id="donation-message-textarea" name="donationMessage"></textarea>
+
+<!-- <select> -->
+<label for="donor-name-visibility-select">Donation Privacy</label>
+<select id="donor-name-visibility-select" name="donorNameVisibility">
+	<option selected="true" value="ALL">
+		Show my name publicy
+	</option>
+	<option selected="true" value="TARGET">
+		Show my name to Bob Mixell only
+	</option>
+	<option selected="true" value="NONE">
+		Hide my name from everyone
+	</option>
+</select>
+
+<!-- The <label> element can also wrap a form field tag, and the link between a label and a form field would be implicit. I'd recommend still populating the "for" and "id" attributes to future-proof. -->
+<!-- This works, but is more fragile -->
+<label>
+	<span>Donation Amount</span>
+
+	<input id="donation-amount-input" name="donationAmount" type="number">
+</label>
+
+<!-- This is more resilient -->
+<label for="donation-amount-input">
+	<span>Donation Amount</span>
+
+	<input id="donation-amount-input" name="donationAmount" type="number">
+</label>
